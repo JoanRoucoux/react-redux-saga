@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { withReduxBoot } from './core';
+import {
+  ReducerRoot,
+  SagaRoot,
+} from './features/commons';
+import { LayoutWrapper } from './features/commons/components';
+import Routes from './Routes';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <LayoutWrapper>
+    <Routes />
+  </LayoutWrapper>
+);
 
-export default App;
+export default withReduxBoot(
+  SagaRoot,
+  ReducerRoot,
+  App,
+);
