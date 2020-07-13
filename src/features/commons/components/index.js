@@ -3,7 +3,9 @@ import Footer from './footer/Footer';
 import Header from './header/Header';
 import LayoutWrapper from './layout-wrapper/LayoutWrapper';
 import LoadingView from './loading-view/LoadingView';
-import NotFoundView from './not-found-view/NotFoundView';
+import MediaCard from './media-card/MediaCard';
+import MediaCardList from './media-card-list/MediaCardList';
+import ThemeWrapper from './theme-wrapper/ThemeWrapper';
 
 export {
   ErrorMessageView,
@@ -11,5 +13,7 @@ export {
   Header,
   LayoutWrapper,
   LoadingView,
-  NotFoundView,
+  MediaCard,
+  MediaCardList,
+  ThemeWrapper,
 };

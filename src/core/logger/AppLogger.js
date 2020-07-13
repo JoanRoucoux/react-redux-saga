@@ -1,6 +1,6 @@
 import debug from 'debug';
 
-const BASE = 'REACT-REDUX-SAGA';
+const BASE = 'FLIXER';
 const COLOURS = {
   trace: 'lightblue',
   info: 'green',
@@ -9,7 +9,11 @@ const COLOURS = {
 };
 
 // generate custom log message
-const generateMessage = (level, message, source) => {
+const generateMessage = (
+  level,
+  message,
+  source,
+) => {
   // Set the prefix which will cause debug to enable the message
   const namespace = `${BASE}:${level}`;
   const createDebug = debug(namespace);

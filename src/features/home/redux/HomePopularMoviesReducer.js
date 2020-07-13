@@ -2,37 +2,37 @@ import HomeActionTypes from './HomeActionTypes';
 
 // reducer initial state
 const initialState = {
-  movies: null,
+  popularMovies: null,
   loading: false,
   error: null,
 };
 
-const HomeMoviesReducer = (
+const HomePopularMoviesReducer = (
   state = initialState,
   action,
 ) => {
   let newState = state;
   switch (action.type) {
-    case HomeActionTypes.HOME_MOVIES_REQUEST:
+    case HomeActionTypes.HOME_POPULAR_MOVIES_REQUEST:
       newState = {
         ...state,
-        movies: null,
+        popularMovies: null,
         loading: true,
         error: null,
       };
       break;
-    case HomeActionTypes.HOME_MOVIES_REQUEST_SUCCESS:
+    case HomeActionTypes.HOME_POPULAR_MOVIES_REQUEST_SUCCESS:
       newState = {
         ...state,
-        movies: action.movies,
+        popularMovies: action.popularMovies,
         loading: false,
         error: null,
       };
       break;
-    case HomeActionTypes.HOME_MOVIES_REQUEST_FAILURE:
+    case HomeActionTypes.HOME_POPULAR_MOVIES_REQUEST_FAILURE:
       newState = {
         ...state,
-        movies: null,
+        popularMovies: null,
         loading: false,
         error: action.error,
       };
@@ -43,4 +43,4 @@ const HomeMoviesReducer = (
   return newState;
 };
 
-export default HomeMoviesReducer;
+export default HomePopularMoviesReducer;

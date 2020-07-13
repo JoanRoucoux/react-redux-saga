@@ -1,11 +1,15 @@
 import HomeActionTypes from './HomeActionTypes';
 import HomeDispatcher from './HomeDispatcher';
-import HomeMoviesReducer from './HomeMoviesReducer';
+import HomePopularMoviesReducer from './HomePopularMoviesReducer';
+import HomePopularTvShowsReducer from './HomePopularTvShowsReducer';
 import HomeProvider from './HomeProvider';
+import HomeTrendingTodayReducer from './HomeTrendingTodayReducer';
 
 export {
   HomeActionTypes,
   HomeDispatcher,
-  HomeMoviesReducer,
+  HomePopularMoviesReducer,
+  HomePopularTvShowsReducer,
   HomeProvider,
+  HomeTrendingTodayReducer,
 };

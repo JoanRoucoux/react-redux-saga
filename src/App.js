@@ -4,13 +4,18 @@ import {
   ReducerRoot,
   SagaRoot,
 } from './features/commons';
-import { LayoutWrapper } from './features/commons/components';
+import {
+  LayoutWrapper,
+  ThemeWrapper,
+} from './features/commons/components';
 import Routes from './Routes';
 
 const App = () => (
-  <LayoutWrapper>
-    <Routes />
-  </LayoutWrapper>
+  <ThemeWrapper>
+    <LayoutWrapper>
+      <Routes />
+    </LayoutWrapper>
+  </ThemeWrapper>
 );
 
 export default withReduxBoot(

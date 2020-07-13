@@ -1,5 +1,6 @@
 const HomePaths = {
-  HOME_PAGE: '/home',
+  HOME_DEFAULT_PATH: '/',
+  HOME_PATH: '/home',
 };
 
 export default HomePaths;

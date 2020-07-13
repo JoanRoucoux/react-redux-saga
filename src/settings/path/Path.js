@@ -1,13 +1,17 @@
+import AboutPaths from './AboutPath';
 import HomePaths from './HomePath';
 import MoviesPaths from './MoviesPath';
+import NotFoundPaths from './NotFoundPath';
+import PeoplePaths from './PeoplePath';
 import TvShowsPaths from './TvShowsPath';
-import AboutPaths from './AboutPath';
 
 const Path = {
+  ...AboutPaths,
   ...HomePaths,
   ...MoviesPaths,
+  ...NotFoundPaths,
+  ...PeoplePaths,
   ...TvShowsPaths,
-  ...AboutPaths,
 };
 
 export default Path;
